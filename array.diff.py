@@ -12,11 +12,12 @@ array_diff([1,2,2,2,3],[2]) == [1,3]
 
 
 def array_diff(a, b):
-    n =[]
-    for value in a:
-        if value not in b:
-            n.append(value)
-    return n
+    # n =[]
+    # for value in a:
+    #     if value not in b:
+    #         n.append(value)
+    # return n
 
+    return [x for x in a if x not in b]
 
 print(array_diff([1, 2], [1]))
